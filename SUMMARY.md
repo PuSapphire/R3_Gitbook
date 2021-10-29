@@ -8,7 +8,7 @@
 
 * [Day 1 (9/10)](Review/day1-9-10.md)
 * [Day 2 (9/24)](Review/day2-9-24.md)
-
+* [Day 3 (10/22)](Review/day3-10-22.md)
 ## 自修園地 <a href="Advanced" id="Advanced"></a>
 
 * [時間複雜度](Advanced/Time-Complexity.md)
