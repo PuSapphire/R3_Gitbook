@@ -9,6 +9,8 @@
 * [Day 1 (9/10)](Review/day1-9-10.md)
 * [Day 2 (9/24)](Review/day2-9-24.md)
 * [Day 3 (10/22)](Review/day3-10-22.md)
+* [Day 4 (11/5)](Review/day4-11-5.md)
+
 ## 自修園地 <a href="Advanced" id="Advanced"></a>
 
 * [時間複雜度](Advanced/Time-Complexity.md)
@@ -18,7 +20,5 @@
 * [淺談字串 <1>](Advanced/Strings-1.md)
 
 ## Archives
-
-***
 
 * [基礎語法](ji-chu-yu-fa.md)
