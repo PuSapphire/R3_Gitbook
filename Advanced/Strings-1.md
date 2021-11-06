@@ -104,6 +104,10 @@ print(s4.format(name="Stella", "bugs", dislike, "crabs", job=person_job))
 #母湯
 ```
 
+除此之外，還可以用`{...:(參數)}`語法來對輸出進行調整。\
+如：`{:.2f}`將數字塞入，並四捨五入至小數第二位。\
+可以參考 https://www.w3schools.com/python/ref_string_format.asp
+
 但即便如此，`.format()`感覺還是好長好麻煩喔。
 
 ### F-string
