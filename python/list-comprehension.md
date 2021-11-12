@@ -50,7 +50,7 @@ new_list = [(表達式) for (物品) in (可迭代容器) if (狀態)]
 當然List Comprehension還有更複雜的方法，不過上面的寫法足以應付大部分需求了。\
 以下是幾個例子。
 
-```py
+```python
 arr = [7 for i in range(5)]
 # arr = [7, 7, 7, 7, 7]
 
@@ -75,7 +75,7 @@ arr = [int(i)**2+7 for i in input().split()]
 
 ## 更複雜的List Comprehension
 
-```py
+```python
 arr = [[x, y] for x in [1, 2, 3] for y in [3, 4, 5] if x != y]
 # arr = [[1, 3], [1, 4], [1, 5], [2, 3], [2, 4], [2, 5], [3, 4], [3, 5]]
 
