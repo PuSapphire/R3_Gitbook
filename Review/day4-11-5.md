@@ -100,7 +100,7 @@ https://apcs-mock.algoseacow.com/#/
 
 對於多測資，可以使用`sys.stdin`或`while 1: try-except`來讀取。
 
-```py
+```python
 ###奇怪的字隔開的輸入
 x = input().split() #空格隔開
 x = input().split(',') #逗號隔開
