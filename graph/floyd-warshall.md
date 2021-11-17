@@ -43,9 +43,9 @@ $$dis[i][j] = \min(dis[i][j], dis[i][k] + dis[k][j])$$
 {% tabs %}
 {% tab title="C++" %}
 ```cpp
-const int INF = 2e9;
+const int INF = 1000000000; //很大的常數
 const int MAXN = 105;
-int dis[105][105], n, m; //假設有n個點，m條路
+int dis[MAXN][MAXN], n, m; //假設有n個點，m條路
 
 //全部先設為INF，自己到自己的距離=0
 for (int i=0; i<n; i++)
@@ -70,6 +70,36 @@ for (int k=0; k<n; k++) //枚舉中介點k
     for (int j=0; j<n; j++) //枚舉終點
       dis[i][j] = min(dis[i][j], dis[i][k] + dis[k][j])
       
-//跑完之後，dis[i][j]就代表i→j的最短距離了!
+//跑完之後，dis[a][b]就代表a→b的最短距離了!
 ```
 {% endtab %}
+
+{% tab title="Python" %}
+```python
+INF, MAXN = 1000000000, 105
+
+#全部先設為很大的常數，且自己到自己的距離=0
+dis = [[INF]*MAXN for i in range(MAXN)]
+for i in range(n):
+  dis[i][i] = 0
+
+#以下為一個範例。看不懂沒關西，總之是在處理哪些點之間有路、路多長這兩個資訊。
+#這裡假設路都是雙向的，也就是說如果P能走到Q，Q也能走到P。
+#並再假設P, Q之間最多一條路，方便說明。
+for i in range(m):
+  P = int(input())
+  Q = int(input())
+  W = int(input())
+  dis[P][Q] = W;
+  dis[Q][P] = W;
+
+#Floyd-Warshall's Algorithm
+for k in range(n): #枚舉中介點k
+  for i in range(n): #枚舉起點
+    for j in range(n): #枚舉終點
+      dis[i][j] = min(dis[i][j], dis[i][k] + dis[k][j])
+
+#跑完之後，dis[a][b]就代表a→b的最短距離了!
+```
+{% endtab %}
+{% endtabs %}
