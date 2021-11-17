@@ -1,5 +1,5 @@
 ---
-description: 最短距離，僅需短短五行!
+description: 最短距離，僅需短短四行!
 ---
 
 ### 核心概念
@@ -29,10 +29,10 @@ $$A \rightarrow B$$、$$B \rightarrow C$$ 這兩條路的 $$W$$ 就會較低。\
 對於這兩種情況，如果 $$i \rightarrow j$$、$$i \rightarrow k$$、$$k \rightarrow j$$ 三者都是路徑短的柏油路，那幹嘛還要繞遠路到 $$k$$，直接就走 $$i \rightarrow j$$ 就好了。\
 但如果 $$i \rightarrow j$$ 需要穿越路徑超長的蜿蜒山路，那或許繞個道比較快。
 
-具體來說，假設目前已知的 $$i \rightarrow j$$ 最短路徑為 $$dis\[i\]\[j\]$$，此時得知有一個新的中介點 $$k$$，
+具體來說，假設目前已知的 $$i \rightarrow j$$ 最短路徑為 $$dis[i][j]$$，此時得知有一個新的中介點 $$k$$，
 則對於 $$i \rightarrow j$$ 的最短距離，有以下關係式:
 
-$$dis\[i\]\[j\] = min(dis\[i\]\[j\], dis\[i\]\[k\] + dis\[k\]\[j\])$$
+$$dis[i][j] = min(dis[i][j], dis[i][k] + dis[k][j])$$
 
 除此之外，同一個點到同一個點之間的距離為 $$0$$(就已經在目的地了)。
 如果兩點間沒有道路，那或許是因為隔了一個太平洋，那可不得了，危險係數突破天際了。此時距離可設為一個特別大的常數。
@@ -69,5 +69,7 @@ for (int k=0; k<n; k++) //枚舉中介點k
   for (int i=0; i<n; i++) //枚舉起點
     for (int j=0; j<n; j++) //枚舉終點
       dis[i][j] = min(dis[i][j], dis[i][k] + dis[k][j])
+      
+//跑完之後，dis[i][j]就代表i→j的最短距離了!
 ```
 {% endtab %}
