@@ -6,7 +6,7 @@ description: 最短距離，僅需短短五行!
 
 首先我們來看這張簡易的圖。
 
-![image](../.gitbook/assets/simple-transitive-graph.png)
+![](../.gitbook/assets/simple-transitive-graph.png)
 
 如果我們想從 $$A$$ 走到 $$C$$，除了直接 $$A \rightarrow C$$ 以外，還有先 $$A \rightarrow B$$ 再 $$B \rightarrow C$$ 的道路。
 兩種路徑都是從 $$A$$ 開始，結束於 $$C$$，在這方面這兩條路是等價的。
