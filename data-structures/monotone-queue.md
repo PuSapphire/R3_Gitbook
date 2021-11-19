@@ -81,7 +81,7 @@ for (int i=0; i<n; ++i) {
   while (!monoqu.empty() && monoqu.back().first < array[i])
     monoqu.pop_back();
 	  
-	//將新的值推到列隊推進來。
+  //將新的值推到列隊推進來。
     monoqu.push_back({array[i], i});
   
   cout << monoqu.front().first << ' ';
