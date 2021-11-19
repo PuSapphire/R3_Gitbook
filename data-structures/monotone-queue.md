@@ -79,7 +79,7 @@ for (int i=0; i<n; ++i) {
 
   //將出現較早、值較小的「必定較差」的數淘汰。→情況1
   //淘汰完後，deque可能就空了(array[i]比之前所有值都大)，
-  //或者還會剩下一些值(都比array[i]還要大)。 →情況2
+  //或者還會剩下一些值(都比array[i]還要大)。→情況2
   while (!monoqu.empty() && monoqu.back().first < array[i])
     monoqu.pop_back();
 	  
