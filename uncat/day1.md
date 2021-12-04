@@ -8,6 +8,8 @@ description: 學Python的伊始
 
 如果要Python輸出，可以使用`print(要輸出的東西)` 函式。
 
+其中數字直接寫就可以了，但如果是文字則要用`"`或`'`包起來。
+
 ```python
 print(100000)  #輸出100000
 print('hello') #輸出hello
