@@ -1,8 +1,8 @@
 ---
-description: 布林值、List
+description: 一個變數，多個內容
 ---
 
-# Day 3 (10/22)
+# Day 3 (10/22): 布林值、List
 
 ## 布林值
 
