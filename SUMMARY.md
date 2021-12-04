@@ -8,7 +8,7 @@
 * [固定區間極值 - Monotone Queue](data-structures/monotone-queue.md)
 * [最短路徑 - Floyd](graph/floyd-warshall.md)
 * [課程回顧](uncat/review.md)
-  * [輸出、變數、語法](uncat/day1.md)
+  * [輸出、運算、變數](uncat/day1.md)
   * [輸入、迴圈](uncat/day2.md)
   * [布林值、List](uncat/day3.md)
   * [APCS相關、多行測資](uncat/day4.md)
