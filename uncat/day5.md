@@ -1,8 +1,8 @@
 ---
-description: import, 自定義函式, 遞迴
+description: 我包含我自己?!
 ---
 
-# Day 5 (12/3)
+# Day 5 (12/3): import, 自定義函式, 遞迴
 
 ## Modules
 
