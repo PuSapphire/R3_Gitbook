@@ -1,8 +1,8 @@
 ---
-description: APCS, 概念
+description: 考APCS要注意甚麼?
 ---
 
-# Day 4 (11/5)
+# Day 4 (11/5): APCS相關、多行測資
 
 ## APCS相關
 
