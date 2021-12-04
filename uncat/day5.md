@@ -60,11 +60,13 @@ print(z)
 
 所謂遞迴就是定義內包含自己。如費式數列:
 
-$$ F(n) = 
+$$ 
+F(n) = 
 \begin{cases}
   1               &\text{if $$n = 1,\ 2$$} \\
   F(n-1) + F(n-2) &\text{if $$n > 2$$}
-\end{cases} $$
+\end{cases} 
+$$
 
 實作方面，就是使用`def`，其餘的都一樣。
 
