@@ -5,7 +5,7 @@
 
 ## 未分類 <a href="uncat" id="uncat"></a>
 
-* [固定區間極值 - Monotone Queue](data-structures/monotone-queue.md)
+* [固定區間極值 - Mono-Que](data-structures/monotone-queue.md)
 * [最短路徑 - Floyd](graph/floyd-warshall.md)
 * [課程回顧](uncat/review.md)
   * [輸出、運算、變數](uncat/day1.md)
