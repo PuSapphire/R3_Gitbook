@@ -22,7 +22,7 @@
 * [淺談字串 <1>](python/strings-1.md)
 * [列表推導式](python/list-comprehension.md)
 
-## 資料結構
+## 資料結構 <a href="data-structures" id="data-structures"></a>
 
 * [STL的容器](data-structures/stl-structure.md)
 * [固定區間極值 - Monotone Queue](data-structures/monotone-queue.md) 
