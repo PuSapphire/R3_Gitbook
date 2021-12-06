@@ -8,7 +8,7 @@ description: 多樣的STL容器
 
 線性容器，裡面的元素顧名思義就是一個接著一個的。
 
-好處是如「存取第 $$k$$ 個元素」這種操作僅需 $$O(1)$$ 。壞處是對於特定指令，如區間操作、查詢元素 $$k$$ 是否包含在內等，有較爛的複雜度。
+缺點是對於特定指令，如區間操作、查詢元素 $$k$$ 是否包含在內等，有較爛的複雜度。
 
 {% tabs %}
 {% tab title="vector" %}
@@ -117,11 +117,11 @@ queue<int> qu;
 qu.push(7);
 qu.push(8);
 cout << qu.front(); //輸出7
-sk.push(9);
-sk.push(1);
+qu.push(9);
+qu.push(1);
 while (!qu.empty()) { //輸出"7 8 9 1"
   cout << qu.top() << ' ';
-  sk.pop();
+  qu.pop();
 }
 ```
 {% endtab %}
