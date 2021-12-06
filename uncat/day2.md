@@ -47,7 +47,7 @@ for i in range(10):
 x = 0
 while x < 10:
     print(x)
-    
+    x += 1
 ##########
 
 #以下的程式碼【沒有】問題。
