@@ -151,7 +151,7 @@ while (!qu.empty()) { //輸出"7 8 9 1"
 
 `set`與`map`其實是同一種東西，內部通常以平衡二搜樹實作，只不過`map`儲存的元素會對應到另一個元素。兩者差異真的不大。
 
-`multi`的容器被允許儲存多個`key`相同的元素，但也因此某些函式無法使用。
+`multi`的容器被允許儲存多個`key`相同的元素，但也因此某些函式無法使用(`[]`存取)。
 
 | 函式1 | 複雜度1 | 函式2 | 複雜度2 |
 | ----------------- | ------------- | ----------------- | ------------- |
@@ -162,6 +162,7 @@ while (!qu.empty()) { //輸出"7 8 9 1"
 | `.lower_bound(e)` | $$O(\log n)$$ | `.upper_bound(e)` | $$O(\log n)$$ |
 
 其中，`lower_bound()`、`upper_bound`，`vector`也有，只不過你必須保證`vector`呈遞增或遞減。
+`vector.find(e)`為 $$O(n)$$。
 
 ```cpp
 #include <set>
@@ -170,10 +171,31 @@ while (!qu.empty()) { //輸出"7 8 9 1"
 #include <multimap>
 
 set<int> st;
-map<int, string> map; //int 對應到 string
+map<int, string> mp; //int 對應到 string
 
-set.insert(17);
-map[1337] = "elite"; //map[e] -> 存取 e 對應的值
-map.insert({420, "blazeit"}; 
+st.insert(17);
+mp[1337] = "elite"; //mp[e] -> 存取 e 對應的值
+mp.insert({420, "blazeit"}; //也可以這樣插入，看習慣
+mp[96] = "ecin";
+
+/* ---------- */
+//for (pair<int, string> p : mp) auto能自動判斷變數型態
+for (auto p : mp) { //可以這樣遍歷。以本段程式碼為例，map這樣是pair<int,string>，set則是int。
+     cout << p.first << ' ' << p.second << '\n';
+} //輸出"96 ecin(換行)420 blazeit(換行)1337 elite"
+
+for (auto it=mp.begin(); it!=mp.end(); it++) {
+     cout << p->first << ' ' << p->second << '\n';
+} //同上，但利用跌代器(可以看成指標，所以用'->')
+
+/* ---------- */
+st.insert(7);
+st.insert(7);
+for (auto e : st) {
+     cout << e << ' '
+} //輸出"7 17"，沒有2個7。非multi的set、map中不允許同樣key的值。
+
+/* ---------- */
+//multimap存取就是利用.find()找到指標，再去進行操作。
 
 ```
