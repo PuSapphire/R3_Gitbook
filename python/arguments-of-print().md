@@ -44,8 +44,8 @@ print(s, x, t, sep='')
 print(x, y, s, t, sep='---', end=" and that is it.")
 #輸出: "10---15---hello---world and that is it." 不換行。
 
-print("x=", x, "y=", y, "so x+y=", x+y, sep='/', end='. So easy.\n'
-#輸出: "x=10/y=15/so x+y=25. So easy." 換行。
+print("x=", x, "y=", y, "so x+y=", x+y, sep='/', end='. So easy.\n')
+#輸出: "x=/10/y=/15/so x+y=/25. So easy." 換行。
 
 print(1, 2, 3, sep='\n', end='uvuevuevue')
 #輸出:
