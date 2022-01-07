@@ -1,3 +1,4 @@
+<!--
 # Table of contents
 
 * [Return 3rd 教學講義](README.md)
@@ -31,3 +32,4 @@
 
 * [時間複雜度](misc/time-complexity.md)
 * [快速冪](misc/binary-exponentiation.md)
+-->
