@@ -14,7 +14,7 @@
   * [APCS相關、多行測資](uncat/day4.md)
   * [import, 自定義函式, 遞迴](uncat/day5.md)
 * 題目題解
-
+  * [上學期末小測驗](https://hackmd.io/DZVoHAJaTqSy5W6_h8Ttog)
 ## 語法園地 <a href="python" id="python"></a>
 
 * [print()的參數](python/arguments-of-print\(\).md)
