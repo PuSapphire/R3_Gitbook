@@ -13,9 +13,8 @@
   * [布林值、List](uncat/day3.md)
   * [APCS相關、多行測資](uncat/day4.md)
   * [import, 自定義函式, 遞迴](uncat/day5.md)
-* [表單題解](uncat/form.md)
-  * [C++](uncat/form-c++.md)
-  * [Python](uncat/form-py.md)
+* 題目題解
+  * [上學期表單](uncat/form.md)
 
 ## 語法園地 <a href="python" id="python"></a>
 
