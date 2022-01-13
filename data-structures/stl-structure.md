@@ -34,7 +34,7 @@ description: 多樣的STL容器
 
 vector<int> v; //宣告儲存int的vector
 vector<float> a(10); //宣告儲存float的vector，且大小開10
-vector<char> c(3, 'l') //宣告儲存char的vector，且大小為5，並將'l'填入這些空格
+vector<char> c(3, 'l') //宣告儲存char的vector，且大小為3，並將'l'填入這些空格
 vector<vector<int>> adj(2, vector<int>(3, -1)); //宣告儲存vector<int>的vector...
 //v = {}
 //a = { , , , , , , , , , } (這裡的空格是指仍未initialize的值)
