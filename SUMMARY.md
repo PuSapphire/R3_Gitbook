@@ -18,7 +18,7 @@
 ## 語法園地 <a href="python" id="python"></a>
 
 * [print()的參數](python/arguments-of-print\(\).md)
-* [淺談字串 <1>](python/strings-1.md)
+* [淺談字串](python/strings.md)
 * [列表推導式](python/list-comprehension.md)
 
 ## 資料結構 <a href="data-structures" id="data-structures"></a>
