@@ -198,7 +198,6 @@ for (auto e : st) {
 {% endtab %}
 
 {% tab title="priority_queue" %}
-
 還記得`queue`嗎? 先進來的人先出去。
 
 `priority_queue`(以下簡稱`pq`)則是優先度高的人先出去。預設的`pq`是越大的元素優先度越高，不過需要的話也可以改成越小的元素優先度越高。
@@ -228,4 +227,5 @@ while (!pq.empty()) {
      pq.pop();
 } //輸出21 11 7
 ```
-
+{% endtab %}
+{% endtabs %}
