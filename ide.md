@@ -44,3 +44,9 @@ Python為直譯式語言，速度較不受影響（但非沒有）。
 
 由於**介面為全英文**，在此不多解釋。 \
 想使用的社員可以自行前往摸索。
+
+# 更多import
+
+用Anaconda裝Spyder來跑Python會自帶許多常用的module，直接import即可。
+
+如果沒有，可以自行使用pip安裝。對於大部分的module，只要打開Anaconda Prompt(如上面搜尋Spyder的方式尋找到它)並輸入"pip install (名稱)"即可安裝完畢。
